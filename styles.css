@@ -1,3 +1,13 @@
+:root {
+    --background-color: #161B33;
+    --button-background: #00C49A;
+    --button-hover: #00A37A;
+    --reset-background: #D16666;
+    --reset-hover: #B34B4B;
+
+    --main-font: "Cutive Mono", monospace;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,18 +17,71 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    font-family: var(--main-font);
+    background-color: var(--background-color);
 }
 
-#grid-container{
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.user > *:not(:last-child) {
+    margin-right: 15px; /* Yerine eklendi */
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #F1DAC4;
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--button-background);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    border: outset ;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#resetBtn {
+    background-color: var(--reset-background);
+    color: #F1DAC4;
+}
+
+#resetBtn:hover {
+    background-color: var(--reset-hover);
+}
+
+#grid-container {
     width: 650px;
     height: 650px;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
+.column {
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.column:hover {
+    opacity: 0.5;
+}
