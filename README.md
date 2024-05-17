@@ -14,5 +14,6 @@ Welcome to the Etch A Sketch project! This web-based application lets you unleas
 - **Color Picker:** Lets the user select a specific color to use for drawing on the grid.
 
 - **Mouseover:** Hover over a grid cell to change its color. The color will be either the one selected with the color picker or a random color, depending on the mode.
+
 [Live Preview](https://semihmertdev.github.io/Etch-a-Sketch/).
 
